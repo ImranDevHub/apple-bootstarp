@@ -1,0 +1,76 @@
+// reset satrt
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+// img satrt
+
+img {
+  object-fit: cover;
+}
+
+// img end
+
+// typogaphy start
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: intel, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: $color-body-text;
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+//link start
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//link end
+// list satrt
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// list end
+// heading h1 h2 h3 satrt
+h1,
+h2,
+h3 {
+  color: $color-heading;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
+// heading h1 h2 h3 end
+
+@include standard-version() {
+  body {
+    font-size: 2.4rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+// typogaphy end
+
+// reset end
