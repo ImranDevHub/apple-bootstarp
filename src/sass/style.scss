@@ -19,12 +19,34 @@
     background: $primary-color;
     color: #ffffff;
   }
-  @include standard-version(){
+  @include standard-version() {
     padding: 1rem 2rem;
     font-size: 1.7rem;
   }
 }
 
 // Button end
+// module start
+
+// module end
 // grid start
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+  @include standard-version() {
+    &--1x2 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+  @include laptop-version() {
+    &--1x5 {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
 // grid end

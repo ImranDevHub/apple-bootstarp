@@ -1,4 +1,10 @@
 @import "/node_modules/normalize.css/normalize.css";
+.flex--center-W-H {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 *,
 *::after,
 *::before {
@@ -88,5 +94,23 @@ h3 {
   .btn {
     padding: 1rem 2rem;
     font-size: 1.7rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+@media screen and (min-width: 800px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x5 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

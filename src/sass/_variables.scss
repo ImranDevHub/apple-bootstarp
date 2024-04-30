@@ -15,3 +15,12 @@ $laptop-version: 1024px;
     @content;
   }
 }
+@mixin flex-center() {
+  display: flex;
+  @content;
+}
+.flex--center-W-H{
+  @include flex-center();
+  justify-content: center;
+  align-items: center;
+}

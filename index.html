@@ -18,6 +18,25 @@
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-  
+   
+
+    <picture>
+      <source
+        media="(max-width: 800px)"
+        srcset="./public/icons/promo_logo_apple_vision_pro_small.png"
+      />
+      <source
+        media="(min-width: 800px) and (max-width:1024px)"
+        srcset="./public/icons/promo_logo_apple_vision_pro_medium.png"
+      />
+      <source
+        media="(min-width:1024px)"
+        srcset="./public/icons/promo_logo_apple_vision_pro_large.png"
+      />
+      <img
+        src="./public/icons/promo_logo_apple_vision_pro_small.png"
+        alt="Vision pro product"
+      />
+    </picture>
   </body>
 </html>
