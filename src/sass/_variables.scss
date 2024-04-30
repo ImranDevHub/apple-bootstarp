@@ -3,7 +3,7 @@ $color-body-text: rgb(40, 40, 42);
 $color-secondry-body: rgba(0, 0, 0, 0.56);
 $primary-color: #0077ed;
 $container-width: 980px;
-$standard-version: 820px;
+$standard-version: 800px;
 $laptop-version: 1024px;
 @mixin standard-version() {
   @media screen and (min-width: $standard-version) {

@@ -1,2 +1,30 @@
-@import './variables';
-@import './resets';
+@import "/node_modules/normalize.css/normalize.css";
+@import "./variables";
+@import "./resets";
+
+// Button start
+
+.btn {
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  &--outline {
+    outline: 2px solid $primary-color;
+    color: $primary-color;
+  }
+  &--primary {
+    background: $primary-color;
+    color: #ffffff;
+  }
+  @include standard-version(){
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+  }
+}
+
+// Button end
+// grid start
+// grid end

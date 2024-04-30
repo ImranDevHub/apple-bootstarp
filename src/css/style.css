@@ -1,3 +1,4 @@
+@import "/node_modules/normalize.css/normalize.css";
 *,
 *::after,
 *::before {
@@ -7,6 +8,10 @@
 img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+span {
+  display: inline-block;
 }
 
 html {
@@ -23,6 +28,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 
 ul {
@@ -51,7 +57,7 @@ h3 {
   font-size: 3.2rem;
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   body {
     font-size: 2.4rem;
   }
@@ -60,5 +66,27 @@ h3 {
   }
   h2 {
     font-size: 5rem;
+  }
+}
+.btn {
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.4rem;
+}
+.btn--outline {
+  outline: 2px solid #0077ed;
+  color: #0077ed;
+}
+.btn--primary {
+  background: #0077ed;
+  color: #ffffff;
+}
+@media screen and (min-width: 800px) {
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
   }
 }/*# sourceMappingURL=style.css.map */
