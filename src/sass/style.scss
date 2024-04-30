@@ -11,13 +11,22 @@
   text-align: center;
   vertical-align: middle;
   font-size: 1.4rem;
+  transition: all 0.3s;
   &--outline {
     outline: 2px solid $primary-color;
     color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: #ffffff;
+    }
   }
   &--primary {
     background: $primary-color;
     color: #ffffff;
+    &:hover {
+      background: #0163c4;
+      color: #ededed;
+    }
   }
   @include standard-version() {
     padding: 1rem 2rem;
@@ -26,9 +35,6 @@
 }
 
 // Button end
-// module start
-
-// module end
 // grid start
 
 .grid {
@@ -50,3 +56,60 @@
 }
 
 // grid end
+// promotions start
+
+.promo {
+  position: relative;
+  &__banner img {
+    width: 100%;
+  }
+  &--header-watch::before,
+  &--header-mac::before,
+  &--header-ipad::before {
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 45px;
+  }
+  &--header-watch::before {
+    background-color: #000;
+  }
+  &--header-mac::before {
+    background-color: #f5f5f7;
+  }
+  &--header-ipad::before {
+    background-color: #FBFBFD;
+  }
+  &--text-white {
+    color: #fff;
+  }
+  &__link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &--content {
+    display: flex;
+    justify-content: center;
+  }
+  &__content--bottom {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    padding: 3rem;
+    z-index: 999;
+  }
+  &__content--top {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 2rem;
+  }
+  &__text {
+    max-width: 230px;
+  }
+}
+
+// promotions end

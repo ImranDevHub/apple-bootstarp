@@ -48,7 +48,7 @@ h2,
 h3 {
   color: rgb(29, 29, 31);
   line-height: 1.1;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h3 {
   font-size: 3.2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   body {
     font-size: 2.4rem;
   }
@@ -81,16 +81,25 @@ h3 {
   text-align: center;
   vertical-align: middle;
   font-size: 1.4rem;
+  transition: all 0.3s;
 }
 .btn--outline {
   outline: 2px solid #0077ed;
   color: #0077ed;
 }
+.btn--outline:hover {
+  background-color: #0077ed;
+  color: #ffffff;
+}
 .btn--primary {
   background: #0077ed;
   color: #ffffff;
 }
-@media screen and (min-width: 800px) {
+.btn--primary:hover {
+  background: #0163c4;
+  color: #ededed;
+}
+@media screen and (min-width: 768px) {
   .btn {
     padding: 1rem 2rem;
     font-size: 1.7rem;
@@ -102,7 +111,7 @@ h3 {
   gap: 1rem;
   margin: 1rem 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -113,4 +122,56 @@ h3 {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
   }
+}
+
+.promo {
+  position: relative;
+}
+.promo__banner img {
+  width: 100%;
+}
+.promo--header-watch::before, .promo--header-mac::before, .promo--header-ipad::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  height: 45px;
+}
+.promo--header-watch::before {
+  background-color: #000;
+}
+.promo--header-mac::before {
+  background-color: #f5f5f7;
+}
+.promo--header-ipad::before {
+  background-color: #FBFBFD;
+}
+.promo--text-white {
+  color: #fff;
+}
+.promo__link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.promo--content {
+  display: flex;
+  justify-content: center;
+}
+.promo__content--bottom {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  padding: 3rem;
+  z-index: 999;
+}
+.promo__content--top {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  padding: 2rem;
+}
+.promo__text {
+  max-width: 230px;
 }/*# sourceMappingURL=style.css.map */
