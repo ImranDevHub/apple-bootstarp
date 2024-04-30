@@ -28,7 +28,7 @@
       color: #ededed;
     }
   }
-  @include standard-version() {
+  @include ipad-version() {
     padding: 1rem 2rem;
     font-size: 1.7rem;
   }
@@ -41,7 +41,7 @@
   display: grid;
   gap: 1rem;
   margin: 1rem 0;
-  @include standard-version() {
+  @include ipad-version() {
     &--1x2 {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
@@ -78,7 +78,7 @@
     background-color: #f5f5f7;
   }
   &--header-ipad::before {
-    background-color: #FBFBFD;
+    background-color: #fbfbfd;
   }
   &--text-white {
     color: #fff;
@@ -113,3 +113,40 @@
 }
 
 // promotions end
+// collapsible satrt
+
+.collapsible {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    transition: transform 0.4s;
+    transform: rotate(0);
+  }
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  @include standard-version() {
+    &__icon {
+      display: none;
+    }
+  }
+  &--expanded {
+    .collapsible__icon {
+      transform: rotate(90deg);
+      color: $primary-color;
+    }
+    .collapsible__content {
+      max-width: 100vh;
+      overflow: visible;
+      opacity: 1;
+    }
+  }
+}
+
+// collapsible end

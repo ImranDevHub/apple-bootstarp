@@ -3,8 +3,14 @@ $color-body-text: rgb(40, 40, 42);
 $color-secondry-body: rgba(0, 0, 0, 0.56);
 $primary-color: #0077ed;
 $container-width: 980px;
-$standard-version: 768px;
+$ipad-version: 768px;
+$standard-version: 820px;
 $laptop-version: 1024px;
+@mixin ipad-version() {
+  @media screen and (min-width: $ipad-version) {
+    @content;
+  }
+}
 @mixin standard-version() {
   @media screen and (min-width: $standard-version) {
     @content;
@@ -19,7 +25,7 @@ $laptop-version: 1024px;
   display: flex;
   @content;
 }
-.flex--center-W-H{
+.flex--center-W-H {
   @include flex-center();
   justify-content: center;
   align-items: center;
