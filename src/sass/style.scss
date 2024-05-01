@@ -277,7 +277,7 @@
 // block start
 
 .block {
-  padding: 2rem;
+  padding: 1rem;
   &--container {
     @include laptop-version() {
       max-width: 1024px;
