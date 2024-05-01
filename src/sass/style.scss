@@ -236,8 +236,6 @@
 // navbar start
 
 .navbar {
-  background-color: #dddddd62;
-  backdrop-filter: blur(5px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -338,3 +336,11 @@
 }
 
 // footer end
+// header block satrt
+
+.header {
+  background-color: #dddddd62;
+  backdrop-filter: blur(5px);
+}
+
+// header block end
