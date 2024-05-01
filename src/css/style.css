@@ -245,4 +245,34 @@ h3 {
 }
 .promo-text--white {
   color: #e7e7e7;
+}
+
+.marquee__container {
+  height: 100px;
+  display: flex;
+  animation: marquee 4s ease-in-out 0s infinite alternate;
+}
+.marquee__img {
+  margin-right: 2rem;
+}
+.marquee__img > img {
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=style.css.map */

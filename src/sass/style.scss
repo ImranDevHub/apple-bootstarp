@@ -156,7 +156,7 @@
 }
 
 // collapsible end
-// promo
+//Carousel promo satrt
 
 .promo {
   &-content--satrt {
@@ -190,14 +190,51 @@
     color: #fff;
     text-shadow: 0 0 10px #000000cb;
   }
-  &-heading--black{
-  color: #000;
-  text-shadow: 0 0 10px #ffffffce;
- }
- &-text--white{
- color: #e7e7e7;
- }
+  &-heading--black {
+    color: #000;
+    text-shadow: 0 0 10px #ffffffce;
+  }
+  &-text--white {
+    color: #e7e7e7;
+  }
+}
+//Carousel promo end
+// marquee promo start
 
+.marquee {
+  &__container {
+    height: 100px;
+    display: flex;
+    animation: marquee 4s ease-in-out 0s infinite alternate;
+    
+  }
+  &__img {
+    margin-right: 2rem;
+    & > img {
+      width: 100%;
+    }
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+  
+  
 
 }
-// promo
+
+// marquee promo end
