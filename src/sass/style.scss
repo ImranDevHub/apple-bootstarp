@@ -242,7 +242,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0.7rem 1rem;
+  padding: 0.2rem 1rem;
   text-align: center;
   vertical-align: middle;
   &__list {
@@ -342,8 +342,11 @@
 // header block satrt
 
 .header {
-  background-color: #dddddd62;
+  background-color: #ffffff;
   backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px #0000001f;
+  position: sticky;
+  top: 0;
 }
 
 // header block end

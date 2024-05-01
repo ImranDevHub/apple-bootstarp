@@ -282,7 +282,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0.7rem 1rem;
+  padding: 0.2rem 1rem;
   text-align: center;
   vertical-align: middle;
 }
@@ -365,9 +365,12 @@ h3 {
   }
 }
 .header {
-  background-color: rgba(221, 221, 221, 0.3843137255);
+  background-color: #ffffff;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1215686275);
+  position: sticky;
+  top: 0;
 }
 
 .hero {
