@@ -133,6 +133,7 @@ h3 {
 }
 
 .promo {
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.0705882353);
   position: relative;
 }
 .promo__banner img {
@@ -310,9 +311,6 @@ h3 {
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6941176471);
 }
 
-.block {
-  padding: 1rem;
-}
 @media screen and (min-width: 1024px) {
   .block--container {
     max-width: 1024px;

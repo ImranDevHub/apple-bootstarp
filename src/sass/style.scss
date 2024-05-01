@@ -68,6 +68,7 @@
 // promotions start
 
 .promo {
+  box-shadow: 0 0 30px 10px #00000012;
   position: relative;
   &__banner img {
     width: 100%;
@@ -277,7 +278,6 @@
 // block start
 
 .block {
-  padding: 1rem;
   &--container {
     @include laptop-version() {
       max-width: 1024px;
