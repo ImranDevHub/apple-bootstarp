@@ -38,8 +38,8 @@
     }
   }
   @include ipad-version() {
-    padding: 1rem 2rem;
-    font-size: 1.7rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -107,7 +107,7 @@
     position: absolute;
     text-align: center;
     bottom: 0;
-    padding: 3rem;
+    padding: 2rem;
     z-index: 999;
   }
 
@@ -171,6 +171,7 @@
   }
   &__text {
     max-width: 230px;
+    font-size: 1.6rem;
   }
   &-btn {
     &--order {
@@ -344,3 +345,10 @@
 }
 
 // header block end
+// hero block satrt
+
+.hero {
+  padding-top: 0;
+}
+
+// hero block end
