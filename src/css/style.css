@@ -255,6 +255,7 @@ h3 {
 }
 .marquee__img {
   margin-right: 2rem;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.131);
 }
 .marquee__img > img {
   width: 100%;
