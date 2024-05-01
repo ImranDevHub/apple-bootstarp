@@ -93,11 +93,19 @@ h3 {
 }
 .btn--primary {
   background: #0077ed;
-  color: #ffffff;
+  color: #ededed;
 }
 .btn--primary:hover {
   background: #0163c4;
-  color: #ededed;
+  color: #ffffff;
+}
+.btn--white {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.6196078431);
+}
+.btn--white:hover {
+  background-color: #f6f6f6;
+  color: #000;
 }
 @media screen and (min-width: 768px) {
   .btn {
@@ -172,9 +180,6 @@ h3 {
   top: 0;
   padding: 2rem;
 }
-.promo__text {
-  max-width: 230px;
-}
 
 .collapsible__header {
   display: flex;
@@ -203,4 +208,41 @@ h3 {
   max-width: 100vh;
   overflow: visible;
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .promo-content--satrt {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .promo-bottom--flex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.promo__text {
+  max-width: 230px;
+}
+.promo-btn--order {
+  order: 1;
+}
+.promo-heading--order {
+  order: 2;
+  margin: 0 1rem;
+}
+.promo-text--order {
+  order: 2;
+  margin-left: 0;
+}
+.promo-heading--white {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7960784314);
+}
+.promo-heading--black {
+  color: #000;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8078431373);
+}
+.promo-text--white {
+  color: #e7e7e7;
 }/*# sourceMappingURL=style.css.map */

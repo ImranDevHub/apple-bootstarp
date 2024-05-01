@@ -22,10 +22,19 @@
   }
   &--primary {
     background: $primary-color;
-    color: #ffffff;
+    color: #ededed;
+
     &:hover {
       background: #0163c4;
-      color: #ededed;
+      color: #ffffff;
+    }
+  }
+  &--white {
+    background-color: #ffffff;
+    color: #0000009e;
+    &:hover {
+      background-color: #f6f6f6;
+      color: #000;
     }
   }
   @include ipad-version() {
@@ -101,17 +110,14 @@
     padding: 3rem;
     z-index: 999;
   }
+
   &__content--top {
     position: absolute;
     text-align: center;
     top: 0;
     padding: 2rem;
   }
-  &__text {
-    max-width: 230px;
-  }
 }
-
 // promotions end
 // collapsible satrt
 
@@ -150,3 +156,48 @@
 }
 
 // collapsible end
+// promo
+
+.promo {
+  &-content--satrt {
+    @include ipad-version() {
+      justify-content: start;
+    }
+  }
+  &-bottom--flex {
+    @include ipad-version() {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__text {
+    max-width: 230px;
+  }
+  &-btn {
+    &--order {
+      order: 1;
+    }
+  }
+  &-heading--order {
+    order: 2;
+    margin: 0 1rem;
+  }
+  &-text--order {
+    order: 2;
+    margin-left: 0;
+  }
+  &-heading--white {
+    color: #fff;
+    text-shadow: 0 0 10px #000000cb;
+  }
+  &-heading--black{
+  color: #000;
+  text-shadow: 0 0 10px #ffffffce;
+ }
+ &-text--white{
+ color: #e7e7e7;
+ }
+
+
+}
+// promo
