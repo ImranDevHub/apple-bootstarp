@@ -275,3 +275,19 @@
 }
 
 // navbar end
+// block start
+
+.block {
+  padding: 2rem;
+}
+.block-fullscreen {
+  padding: 2rem 0;
+}
+.container {
+  @include laptop-version() {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+// block end

@@ -310,4 +310,19 @@ h3 {
 .collapsible--expanded .navbar__icon {
   opacity: 1;
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6941176471);
+}
+
+.block {
+  padding: 2rem;
+}
+
+.block-fullscreen {
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
