@@ -322,6 +322,9 @@ h3 {
   padding: 2rem 0;
 }
 
+.footer {
+  background-color: #f5f5f7;
+}
 .footer__para, .footer__bottom {
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.6274509804);
