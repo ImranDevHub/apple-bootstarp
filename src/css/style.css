@@ -186,14 +186,14 @@ h3 {
   justify-content: space-between;
 }
 .collapsible__icon {
-  transition: transform 0.4s;
+  transition: all 0.4s;
   transform: rotate(0);
 }
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 @media screen and (min-width: 820px) {
   .collapsible__icon {
@@ -205,8 +205,7 @@ h3 {
   color: #0077ed;
 }
 .collapsible--expanded .collapsible__content {
-  max-width: 100vh;
-  overflow: visible;
+  max-height: 100vh;
   opacity: 1;
 }
 
@@ -275,4 +274,40 @@ h3 {
   100% {
     transform: translateX(0%);
   }
+}
+.navbar {
+  background-color: rgba(221, 221, 221, 0.3843137255);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.navbar__list {
+  width: 100%;
+}
+.navbar__list a:hover {
+  color: dodgerblue;
+}
+@media screen and (min-width: 820px) {
+  .navbar__icon {
+    display: none;
+  }
+  .navbar__list {
+    opacity: 1;
+    max-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-grow: 0.9;
+    justify-content: space-between;
+    font-size: 1.3rem;
+  }
+}
+
+.collapsible--expanded .navbar__icon {
+  opacity: 1;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6941176471);
 }/*# sourceMappingURL=style.css.map */
