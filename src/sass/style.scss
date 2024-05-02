@@ -19,6 +19,14 @@
       background-color: $primary-color;
       color: #ffffff;
     }
+    &-white{
+      outline: 2px solid #fff;
+      color: #fff;
+      &:hover{
+        background-color: #fff;
+        color: #000;
+      }
+    }
   }
   &--primary {
     background: $primary-color;
