@@ -4,13 +4,13 @@
 // Button start
 
 .btn {
+  border-radius: 20px;
+  font-size: 1.4rem;
   font-weight: 700;
   padding: 0.7rem 1.5rem;
-  border-radius: 20px;
   text-align: center;
-  vertical-align: middle;
-  font-size: 1.4rem;
   transition: all 0.3s;
+  vertical-align: middle;
   &--outline {
     outline: 2px solid $primary-color;
     color: $primary-color;
@@ -18,10 +18,10 @@
       background-color: $primary-color;
       color: #ffffff;
     }
-    &-white{
+    &-white {
       outline: 2px solid #fff;
       color: #fff;
-      &:hover{
+      &:hover {
         background-color: #fff;
         color: #000;
       }
@@ -85,8 +85,8 @@
   &--header-ipad::before {
     content: "";
     display: block;
-    overflow: hidden;
     height: 45px;
+    overflow: hidden;
   }
   &--header-watch::before {
     background-color: #000;
@@ -101,29 +101,29 @@
     color: #fff;
   }
   &__link {
-    position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
   }
   &--content {
     display: flex;
     justify-content: center;
   }
   &__content--bottom {
-    position: absolute;
-    text-align: center;
     bottom: 0;
     padding: 2rem;
+    position: absolute;
+    text-align: center;
     z-index: 999;
   }
 
   &__content--top {
+    padding: 2rem;
     position: absolute;
     text-align: center;
     top: 0;
-    padding: 2rem;
   }
 }
 // promotions end
@@ -140,8 +140,8 @@
   }
   &__content {
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
+    overflow: hidden;
     transition: all 0.3s;
   }
 
@@ -211,9 +211,9 @@
 
 .marquee {
   &__container {
-    height: 100px;
-    display: flex;
     animation: marquee 4s ease-in-out 0s infinite alternate;
+    display: flex;
+    height: 100px;
   }
   &__img {
     margin-right: 2rem;
@@ -256,7 +256,7 @@
     width: 100%;
     a {
       &:hover {
-        color: dodgerblue;
+        color: rgb(0, 0, 0);
       }
     }
   }
@@ -265,20 +265,25 @@
       display: none;
     }
     &__list {
-      opacity: 1;
-      max-height: 100vh;
-      width: auto;
       display: flex;
       flex-grow: 0.9;
-      justify-content: space-between;
       font-size: 1.3rem;
+      justify-content: space-between;
+      max-height: 100vh;
+      opacity: 1;
+      width: auto;
     }
   }
 }
 .collapsible--expanded {
   .navbar__icon {
-    opacity: 1;
-    box-shadow: 0 0 30px 10px #000000b1;
+    // opacity: 1;
+    // box-shadow: 0 0 30px #9d9d9d5a;
+    display: none;
+  }
+  .navbar-icon--container {
+    content: "f654";
+    display: block;
   }
 }
 
@@ -308,9 +313,20 @@
   &__bottom {
     font-size: 1.3rem;
     color: #000000a0;
+    a {
+      color: blue;
+      transition: all 0.3s;
+      &:hover {
+        color: dodgerblue;
+        text-decoration: underline;
+      }
+    }
   }
   &__main {
     border-top: 1px solid #0000002e;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
   }
   &--collapsible {
     padding-bottom: 1rem;
@@ -322,14 +338,25 @@
     color: #000000b6;
   }
   &__list {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem;
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    a:hover {
+      color: #000;
+      text-decoration: underline;
     }
   }
   .collapsible__icon {
     display: inline-block;
+  }
+  &__copyright {
+    border-top: 1px solid #0000002e;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    margin-top: 2rem;
   }
 }
 @include laptop-version() {
