@@ -1,25 +1,25 @@
-// reset satrt
+// reset start
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-// img satrt
+// img start
 
 img {
   object-fit: cover;
 }
 
 // img end
-// sapn satrt
+// span start
 
 span {
   display: inline-block;
 }
 
-// sapn end
+// span end
 
-// typogaphy start
+// typography start
 html {
   font-size: 62.5%;
 }
@@ -39,7 +39,7 @@ a {
 }
 
 //link end
-// list satrt
+// list start
 
 ul {
   list-style-type: none;
@@ -48,7 +48,7 @@ ul {
 }
 
 // list end
-// heading h1 h2 h3 satrt
+// heading h1 h2 h3 start
 h1,
 h2,
 h3 {
@@ -79,6 +79,6 @@ h3 {
   }
 }
 
-// typogaphy end
+// typography end
 
 // reset end
